@@ -1,0 +1,469 @@
+#wpcontent {
+  padding-left: 0;
+}
+
+#wpbody-content {
+  padding-bottom: 0;
+}
+
+#wpfooter {
+  display: none;
+}
+
+toplevel_page_simply-static img {
+  width: 100%;
+}
+
+.settings-error.notice.notice-warning {
+  display: none;
+}
+
+/* Start plugin settings */
+.plugin-settings-container {
+  background: #f0f0f1;
+
+  .components-flex {
+    align-items: flex-start;
+  }
+
+  .components-flex-item {
+    margin-left: 0;
+  }
+
+  .inner-settings > * {
+    width: 100%;
+    max-width: 850px;
+  }
+
+  .save-settings {
+    button {
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .settings-wide > * {
+    width: 100%;
+    max-width: 1050px;
+  }
+
+  .migrate-notice.components-notice.is-warning {
+    margin: 0 0 10px 0;
+  }
+
+  .diagnostics-notice {
+    margin: 0 0 20px 0 !important;
+    max-width: 840px;
+    border-left: 4px solid var(--wp-components-color-accent, #b32d2e);
+
+    .is-secondary {
+      box-shadow: inset 0 0 0 1px #b32d2e !important;
+      color: #b32d2e !important;
+    }
+  }
+
+  .diagnostics-notice-generate {
+    max-width: 100% !important;
+  }
+
+  .upgrade-network-notice {
+    margin: 0 0 0 40px;
+  }
+
+  .ss-align-right {
+    text-align: right;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .ss-no-shrink {
+    flex-shrink: 0;
+  }
+
+  .ss-integration {
+    align-items: center;
+
+    .ss-text-notice {
+      text-transform: uppercase;
+      font-size: 10px;
+      color: rgb(104, 4, 204);
+      margin-left: 10px;
+    }
+
+    .integration-toggle {
+      margin: 0;
+    }
+  }
+
+  /* Navigation */
+  .plugin-nav {
+    padding: 25px;
+    box-sizing: border-box;
+    height: auto;
+    max-width: 220px;
+    min-height: 100vh;
+    margin: 0;
+
+    button:focus, button:focus-visible, button:hover {
+      box-shadow: none;
+      color: rgb(104, 4, 204);
+    }
+
+    .generate-container {
+      margin-top: 30px;
+
+      .generate-type {
+        height: 40px;
+        line-height: 40px;
+        max-width: 200px;
+      }
+
+      button {
+        background: #6804cc;
+        border: solid 1px #50059b;
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        max-width: 200px;
+      }
+
+      .cancel-button {
+        text-align: center;
+        display: block;
+        max-width: 200px;
+        margin: 10px 0;
+        cursor: pointer;
+        color: rgb(104, 4, 204);
+        text-decoration: underline;
+      }
+    }
+
+    .environment-delete-button {
+      margin-top: 4px;
+      color: #b32d2e;
+    }
+
+    .components-button {
+      width: 100%;
+      text-align: left;
+      padding: 0;
+    }
+
+    .components-card__body {
+      padding: 20px 0;
+    }
+
+    .components-button.is-primary {
+      width: auto;
+      padding: 10px 15px;
+      margin: 10px 0;
+    }
+
+    .dashicon.dashicons.dashicons-admin-links {
+      font-size: 15px;
+      top: 2px;
+      position: relative;
+    }
+
+    .components-button > .dashicon {
+      margin-right: 10px;
+    }
+
+    .plugin-logo {
+      max-width: 150px;
+    }
+
+    .is-active-item {
+      color: rgb(104, 4, 204);
+    }
+
+    h4.settings-headline {
+      text-transform: uppercase;
+    }
+  }
+
+  /* Settings */
+  .plugin-settings {
+    padding: 25px;
+    box-sizing: border-box;
+    height: 100vh;
+    background: #f0f0f1;
+
+    /* Tables */
+    table {
+      width: 100%;
+
+      th {
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      td.diagnostics-icon {
+        width: 15%;
+      }
+
+      td.diagnostics-test {
+        width: 30%;
+        line-break: anywhere;
+      }
+
+      td.diagnostics-result {
+        width: 55%;
+        line-break: anywhere;
+      }
+    }
+
+    /* Notices */
+    .components-notice {
+      margin: 15px 0 0 0;
+      box-sizing: border-box;
+    }
+
+    /* Tooltips */
+    .inline-tooltip {
+      display: inline;
+      top: -2px;
+      position: relative;
+      margin-left: 5px;
+    }
+
+    .dashicons-yes.icon-yes, .dashicons-no.icon-no {
+      border: solid 1px;
+      border-radius: 50%;
+      padding: 2px 2px;
+    }
+
+    .dashicons-yes.icon-yes {
+      color: #51aa51;
+    }
+
+    .dashicons-no.icon-no {
+      color: #ca4242;
+    }
+
+    .formatted-label {
+      margin-bottom: 10px;
+      display: block;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+
+    .simplycdn-connect {
+      position: relative;
+      top: -7px;
+    }
+
+    /* Terminal */
+    .react-terminal-line {
+      margin-bottom: 10px;
+    }
+
+    .react-terminal-line a {
+      color: #6fa4df;
+    }
+
+    .ss-theme-style-name {
+      .components-base-control__help {
+        margin-bottom: 10px;
+      }
+
+      .components-input-control__container {
+        width: 200px;
+
+        .components-input-control__input {
+          text-align: right;
+        }
+
+        .components-input-control__suffix {
+          padding-right: 10px;
+          background: rgba(0, 0, 0, 0.05);
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  /* Style for disabled settings */
+  input:disabled, textarea:disabled, select:disabled {
+    background: #eeeeee;
+  }
+
+  .components-card {
+    border-radius: 0 !important;
+  }
+
+  .simply-static-video-modal-background {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .simply-static-video-button.is-link {
+    box-shadow: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5px;
+    line-height: 1.4;
+    color: #3858e9;
+  }
+
+
+  .ss-get-pro {
+    background: #6804cc !important;
+    border: solid 1px #50059b;
+  }
+
+}
+
+.components-modal__frame.simply-static-video-modal {
+  border-radius: 0;
+}
+
+.dashicons.spin {
+  animation: dashicons-spin 2s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes dashicons-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.reset-db-btn {
+  margin-left: 10px;
+}
+
+/* Responsive Design */
+a.show-nav {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  div#wpwrap {
+    background: white;
+  }
+
+  .toggle-nav {
+    display: none;
+  }
+
+  .plugin-settings-container .components-flex {
+    flex-direction: column;
+    align-items: center;
+    background: white;
+  }
+
+  .plugin-logo {
+    display: none;
+  }
+
+  p.version-number {
+    display: none;
+  }
+
+  .plugin-nav .generate-container {
+    margin-top: 0;
+  }
+
+
+  .plugin-settings-container .plugin-settings {
+    padding: 0;
+  }
+
+  .components-flex {
+    gap: 0;
+  }
+
+  .auto-fold #wpcontent {
+    padding-left: 0;
+  }
+
+  .plugin-settings-container .plugin-nav {
+    padding: 0;
+    min-height: auto;
+    max-width: 205px;
+    box-shadow: none;
+  }
+
+  .react-terminal {
+    height: 180px !important;
+  }
+
+  .react-terminal-wrapper {
+    padding: 50px 15px 0;
+  }
+
+  .react-terminal-line {
+    font-size: 13px;
+  }
+
+  .plugin-settings-container .plugin-nav .components-card__body {
+    padding: 0;
+  }
+
+  a.show-nav {
+    text-align: center;
+    display: block;
+    color: #1e1e1e;
+    width: 100%;
+    background: #f0f0f1;
+    padding: 20px;
+  }
+
+  span.components-form-toggle {
+    margin: 10px 0 10px 0;
+  }
+
+  a.components-button.is-secondary {
+    margin: 0px auto;
+    display: block;
+    max-width: 180px;
+    line-height: 1.5;
+  }
+
+  select, textarea::placeholder, input::placeholder {
+    font-size: 13px !important;
+  }
+
+  .components-text-control__input, .components-text-control__input[type=color], .components-text-control__input[type=date], .components-text-control__input[type=datetime-local], .components-text-control__input[type=datetime], .components-text-control__input[type=email], .components-text-control__input[type=month], .components-text-control__input[type=number], .components-text-control__input[type=password], .components-text-control__input[type=tel], .components-text-control__input[type=text] {
+    font-size: 13px;
+  }
+
+  .save-settings {
+    margin: 5px auto 15px auto;
+    display: block;
+    width: 180px;
+
+    button.components-button.is-primary {
+      width: 60%;
+      text-align: center;
+      display: block;
+      margin: 0px auto;
+    }
+
+    button.components-button.is-secondary {
+      width: 60%;
+      text-align: center;
+      display: block;
+      margin: 10px auto;
+    }
+  }
+
+  .reset-db-btn {
+    margin: 10px 0 0 0;
+  }
+
+}
